@@ -11,9 +11,9 @@
     "declarative_net_request": {
         "rule_resources": [
             {
-                "id": "yt3",
+                "id": "rules",
                 "enabled": true,
-                "path": "yt3.json"
+                "path": "rules.json"
             }
         ]
     },
