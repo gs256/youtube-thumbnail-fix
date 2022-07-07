@@ -1,0 +1,19 @@
+{
+    "name": "ytfix",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "content_scripts": [],
+    "background": {
+        "scripts": ["src/background.js"]
+    },
+    "permissions": [
+        "<all_urls>",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_title": "ytfix"
+    }
+}
