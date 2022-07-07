@@ -1,19 +1,22 @@
 {
-    "name": "ytfix",
-    "version": "0.1.0",
-    "manifest_version": 2,
-    "content_scripts": [],
-    "background": {
-        "scripts": ["src/background.js"]
-    },
+    "name": "YouTube Thumbnail Fix",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {},
     "permissions": [
-        "<all_urls>",
-        "storage",
         "webRequest",
-        "webRequestBlocking",
-        "tabs"
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
     ],
-    "browser_action": {
-        "default_title": "ytfix"
-    }
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "yt3",
+                "enabled": true,
+                "path": "yt3.json"
+            }
+        ]
+    },
+    "host_permissions": ["*://*/*"],
+    "action": {}
 }
