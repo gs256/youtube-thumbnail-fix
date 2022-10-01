@@ -22,7 +22,7 @@
             }
         },
         "condition": {
-            "urlFilter": "https://lh3.googleusercontent.com/*"
+            "urlFilter": "https://lh*.googleusercontent.com/*"
         }
     }
 ]
