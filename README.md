@@ -1,5 +1,7 @@
 # YouTube Thumbnail Fix
 
+[EN](README.md) / [RU](README.ru.md)
+
 A simple extension for Chromium that fixes YouTube thumbnails in Russia.
 
 ![thumbnail](thumbnail.png)
