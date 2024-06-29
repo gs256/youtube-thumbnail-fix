@@ -1,13 +1,22 @@
 # YouTube Thumbnail Fix
 
-A simple extension for Chromium that fixes YouTube thumbnails in Russia
+A simple extension for Chromium that fixes YouTube thumbnails in Russia.
+
+![thumbnail](thumbnail.png)
+
 
 ## How does it work?
 
-YouTube's cdn `yt3.ggpht.com` seems to be blocked in Russia, so the thumbnails that rely on this specific cdn won't load. This extension redirects all `yt3.ggpht.com` requests to `yt4.ggpht.com`.
+YouTube's CDN `yt3.ggpht.com` seems to be blocked by some Russian internet providers, so the channel thumbnails that rely on this specific CDN can't be loaded. This extension redirects all `yt3.ggpht.com` requests to `yt4.ggpht.com` which is basically the same thing.
 
-If `yt4.ggpht.com` suddenly gets blocked too, you can always change redirect host option in the `rules.json` file to `yt5.ggpht.com` and so on.
+## Installation
 
-## UPD: YouTube Music thumbnails stopped working
+1. Download archive from the [latest release](https://github.com/gs256/youtube-thumbnail-fix/releases/latest)
 
-Same solution. Now extension also redirects all `lh3.googleusercontent.com` requests to `yt4.ggpht.com`.
+2. Unpack it to a persistent folder, you won't be able to move it after the installation
+
+3. Go to `chrome://extensions` in your browser
+
+3. Turn on `Developer mode`
+
+5. Click `Load unpacked` and select the recently unpacked `youtube-thumbnail-fix` folder
